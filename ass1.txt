@@ -1,0 +1,26 @@
+ 1.Write a C program to read a number and print number is "Harshad Number" or "Not Harshad Number"
+
+
+#include <stdio.h>
+
+int main() {
+   int n,sum=0,num,r;
+   scanf("%d",&n);
+   while(n!=0)
+   {
+       r=n%10;
+       sum=sum+r;
+       n=n/10;
+   }
+   num=n/sum;
+   if(num==0)
+   printf("HARSHAD");
+   else
+   printf("Not Harshad");
+
+    return 0;
+}
+
+
+INPUT:156
+OUTPUT: HARSHAD
