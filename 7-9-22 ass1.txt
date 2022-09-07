@@ -1,0 +1,29 @@
+#include<stdio.h>
+
+int main()
+{
+  int i,m,n;
+ int c;
+printf("enter limit");
+scanf("%d",&m);
+printf("enter the number");
+scanf("%d",&n);
+int a=0, b=1;
+for(i=0;i<=m;i++)
+{
+c=a vh+b;
+if(c==n)
+break;
+a=b;
+b=c;
+}
+if(c==n)
+printf("yes");
+else
+printf("no");
+
+    return 0;
+}
+Input:enter limit 8
+enter the number 5
+Output:yes
